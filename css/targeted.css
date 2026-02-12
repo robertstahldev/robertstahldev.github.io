@@ -1,0 +1,12 @@
+.my-title {
+  justify-self: right;
+}
+
+#title-last-name {
+  font-style: italic;
+  color: rgba(190, 14, 52, 0.932);
+}
+
+.my-pic {
+  height: 300px;
+}

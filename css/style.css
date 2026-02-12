@@ -1,0 +1,107 @@
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.center-self {
+  justify-self: center;
+}
+
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+li:not(:last-child) {
+  border-right: 1px solid darkgrey;
+  line-height: 15px;
+  padding-inline: 5px;
+  margin-block: 3px;
+}
+
+li:last-child {
+  padding-inline: 5px;
+  margin-block: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(207, 200, 200);
+}
+
+.on-menu-hover:hover {
+  color: rgba(185, 29, 29, 0.863);
+}
+
+.welcome-message * {
+  margin: 5px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  margin: 0px;
+}
+
+p a {
+  text-decoration-color: green;
+}
+
+summary {
+  grid-column: var(--n) / span 1;
+  grid-row: 1;
+  display: grid;
+  width: 100%;
+  border-bottom: 2px solid;
+  cursor: pointer;
+  z-index: 1;
+}
+
+details[open] :is(summary, .summary) {
+  font-weight: bold;
+}
+
+details::details-content {
+  padding: 1rem;
+  border-bottom: 2px solid ;
+}
+
+.tab {
+  background-color: transparent;
+  color: lightgrey;
+  width: 100%;
+  border-style: none;
+  border-bottom: 2px solid lightgrey;
+  height: 25px;
+  padding-top: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.prof-tab {
+  border-radius: 90% 0% 0% 0%;
+  border-right: 1px solid;
+}
+
+.pers-tab {
+  border-radius: 0% 90% 0% 0%;
+  border-left: 1px solid;
+}
+
+.tab:hover {
+  background-image: linear-gradient(
+    to top,
+    rgb(7, 245, 7),
+    rgba(39, 95, 33, 0.774)
+  );
+  opacity: 0.7;
+  color: white;
+}
