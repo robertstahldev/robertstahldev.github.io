@@ -1,19 +1,15 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr 250px;
-  grid-template-rows: 80px 40px 400px 1fr;
-  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 80px 50px auto auto;
   grid-auto-flow: row;
   gap: 20px 20px;
-  justify-content: left;
-  align-items: center;
-  width: 100%;
-  margin-block: 50px;
+
 }
 
 .about-container {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 80px 40px 100px 1fr 1fr;
+  grid-template-rows: 80px 50px auto auto auto;
   gap: 20px 0px;
 }
 
@@ -33,7 +29,7 @@
   grid-area: 3 / 1 / auto / auto;
 }
 
-.profile-pic {
+.my-pic {
   grid-area: 3 / 2 / auto / auto;
 }
 
@@ -44,7 +40,7 @@
 .about-grid {
   grid-area: 4 / 1 / auto / span 3;
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
   grid-template-rows: auto 1fr;
 }
 

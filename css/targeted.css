@@ -8,5 +8,11 @@
 }
 
 .my-pic {
-  height: 300px;
+  max-height: 250px;
+}
+
+.resume-name {
+  grid-row-start: 3;
+  grid-column: span 2;
+  justify-self: center;
 }
