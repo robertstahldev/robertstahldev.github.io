@@ -6,7 +6,7 @@
 }
 
 .main-menu {
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
 }
 
 .menu {
@@ -20,7 +20,7 @@
 .menu-item {
   line-height: 15px;
   padding-inline: 5px;
-  margin-block: 3px
+  margin-block: 3px;
 }
 
 .menu-item:not(:last-child) {
@@ -32,8 +32,17 @@ a {
   color: rgb(207, 200, 200);
 }
 
+.menu-item a {
+  display: inline-block;
+  transition:
+    transform 0.1s ease,
+    color 0.1s ease;
+}
+
 .on-menu-hover:hover {
-  color: rgba(185, 29, 29, 0.863);
+  position: relative;
+  color: #5ec8ff;
+  transform: scale(1.2);
 }
 
 .center-self {
@@ -51,7 +60,11 @@ a {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: clamp(1.4rem, 3.2vw, 2.6rem);
+}
+
+h3 {
+  font-size: clamp(0.95rem, 1.6vw, 1.2rem);
 }
 
 h2 {
@@ -59,7 +72,7 @@ h2 {
 }
 
 p a {
-  color: cornflowerblue;
+  color: #6495ed;
 }
 
 summary {
@@ -74,11 +87,12 @@ summary {
 
 details[open] :is(summary, .summary) {
   font-weight: bold;
+  color: aliceblue;
 }
 
 details::details-content {
   padding: 1rem;
-  border-bottom: 2px solid ;
+  border-bottom: 2px solid;
 }
 
 .tab {
@@ -110,7 +124,8 @@ details::details-content {
     rgba(39, 95, 33, 0.774)
   );
   opacity: 0.7;
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .resume-flex {
@@ -120,20 +135,24 @@ details::details-content {
   flex-direction: column;
 }
 
+.resume-flex h3 {
+  margin-bottom: 0;
+}
+
 span.list-subtitles {
   font-weight: 600;
 }
 
 span.h5-reduced {
   font-weight: 100;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .highlight {
   font-style: italic;
-  color:aliceblue;
+  color: aliceblue;
 }
 
-ul li ul li{
+ul li ul li {
   font-size: smaller;
 }

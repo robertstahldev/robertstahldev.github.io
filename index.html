@@ -8,57 +8,380 @@
     />
     <title>Rob's Website</title>
 
-    <link href="./css/background.css" rel="stylesheet" />
-    <link href="./css/grid.css" rel="stylesheet" />
+    <link href="./css/style-new.css" rel="stylesheet" />
+
+    <!-- <link href="./css/background-new.css" rel="stylesheet" /> -->
+    <!-- <link href="./css/background.css" rel="stylesheet" /> -->
+    <!-- <link href="./css/grid.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/targeted.css" rel="stylesheet" />
     <link href="./css/media.css" rel="stylesheet" />
+    <link href="./css/hero.css" rel="stylesheet" /> -->
   </head>
-  <body class="cursor gradient-background">
-    <div class="outer-border">
-      <div class="container">
-        <div></div>
-        <div class="my-title">
-          <div id="my-title">
-            <h2>Robert <span id="title-last-name">Stahl</span></h2>
-          </div>
-        </div>
-        <div class="main-menu">
-          <ul class="menu gradient-border center-self">
-            <li class="menu-item">
-              <a href="index.html" class="on-menu-hover">Home</a>
+  <body class="cursor">
+    <div class="container">
+      <div class="sidebar-bg" aria-hidden="true"></div>
+      <nav class="main-menu">
+        <a class="my-icon" href="index.html" aria-label="Home"
+          ><span class="my-icon-text">R S</span></a
+        >
+        <ul class="menu gradient-border center-self">
+          <li class="menu-item">
+            <a href="#Home" class="on-menu-hover">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#Portfolio" class="on-menu-hover">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a href="#Resume" class="on-menu-hover">Resume</a>
+          </li>
+          <li class="menu-item">
+            <a href="#Skills" class="on-menu-hover">Skills</a>
+          </li>
+          <li class="menu-item">
+            <a href="#About" class="on-menu-hover">Who I Am</a>
+          </li>
+          <li class="menu-item">
+            <a href="#Contact" class="on-menu-hover last-a">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <section id="Home" class="hero">
+          <h1 class="hero-name">Robert Stahl</h1>
+          <h2 class="hero-subline">Software Engineer</h2>
+          <ul class="hero-skills">
+            Backend
+            <li>Systems</li>
+            <li>Full-Stack</li>
+          </ul>
+          <p class="hero-tagline">Where structure meets usability.</p>
+          <button>View Projects</button>
+          <button>Contact Me</button>
+          <img
+            src="./assets/images/profile-img.png"
+            class="my-pic center-self gradient-border"
+          />
+        </section>
+        <section id="Portfolio" class="portfolio">
+          <h2>Portfolio</h2>
+          <p>
+            Selected work focused on structure, systems, and usable solutions.
+          </p>
+
+          <article class="smarttrip-article" aria-labelledby="smarttrip-heading">
+            <div class="portfolio-left">
+              <h3 id="smarttrip-heading">SmartTrip Planner</h3>
+              <p>
+                My Computer Science Capstone of a website that allows users to
+                create trips with other users. Users can create a trip over a
+                time period
+              </p>
+              <ul>
+                <li>Designed relational schema using Prisma</li>
+                <li>Built RESTful API endpoints</li>
+                <li>Implemented authentication flow</li>
+              </ul>
+              <p>
+                <a href="...">View GitHub</a>
+                <a href="...">Live Demo</a>
+              </p>
+            </div>
+            <div class="portfolio-right">
+              <img
+                id="smart-header"
+                src="./assets/images/smarttrip-header.png"
+                alt="Screenshot of SmartTrip Planner upcoming trip header"
+              />
+              <img
+                id="smart-flight"
+                src="./assets/images/smarttrip-flights.png"
+                alt="Screenshot of SmartTrip Planner upcoming trip flights"
+              />
+              <img
+                id="smart-lodge"
+                src="./assets/images/smarttrip-lodging.png"
+                alt="Screenshot of SmartTrip Planner upcoming trip lodging"
+              />
+            </div>
+          </article>
+
+          <article aria-labelledby="cube-heading">
+            <h3 id="cube-heading">Cube Conquest</h3>
+            ...
+          </article>
+        </section>
+        <section id="Resume" class="resume">
+          <h2>
+            Software Engineer | Backend & Systems | Full-Stack Development
+          </h2>
+          <p class="resume-summary">
+            Software engineer with a background in systems automation, backend
+            development, and operational tools. Known for bringing structure to
+            complex environments, translating real-world problems into technical
+            solutions, and building reliable systems that support users.
+          </p>
+
+          <p class="resume-note">
+            For an overview of technologies, tools, and platforms I work with,
+            see the <a href="skills.html">Skills page</a>.
+          </p>
+
+          <h3>Career Highlights</h3>
+          <ul>
+            <li>
+              Designed and built data-driven applications, automation workflows,
+              and internal tools across multiple environments, supporting real
+              users and operational requirements.
             </li>
-            <li class="menu-item">
-              <a href="./public/portfolio.html" class="on-menu-hover"
-                >Portfolio</a
-              >
+            <li>
+              Developed backend logic and APIs to support evolving business
+              needs, focusing on reliability, maintainability, and clear data
+              flow between systems.
             </li>
-            <li class="menu-item">
-              <a href="./public/resume.html" class="on-menu-hover">Resume</a>
+            <li>
+              Applied software engineering principles in high-accountability
+              environments where accuracy, security, and operational continuity
+              were critical.
             </li>
-            <li class="menu-item">
-              <a href="./public/skills.html" class="on-menu-hover">Skills</a>
-            </li>
-            <li class="menu-item">
-              <a href="./public/about.html" class="on-menu-hover">About</a>
-            </li>
-            <li class="menu-item">
-              <a href="./public/contact.html" class="on-menu-hover">Contact</a>
+            <li>
+              Known for bringing structure to complex problems, communicating
+              clearly across technical and non-technical stakeholders, and
+              delivering solutions that improve efficiency.
             </li>
           </ul>
-        </div>
-        <div class="welcome">
-          <div class="welcome-message">
-            <h3>Hi there and welcome!</h3>
-            <h1>I'm Robert Stahl,</h1>
-            <h1>a Full-Stack Developer</h1>
+          <h3>Education</h3>
+          <ul>
+            <li>
+              <h4>Bachelor of Science, Computer Science</h4>
+              <h5>
+                University of Maryland Global Campus, Phoenix, AZ |
+                <span class="h5-reduced">Dec 2025</span>
+              </h5>
+              <ul>
+                <li>
+                  Focused on software engineering practices, system design, and
+                  backend development
+                </li>
+                <li>
+                  Built full-stack and systems-level projects emphasizing clean
+                  architecture and maintainable code
+                </li>
+                <li>
+                  Advanced coursework included concurrent programming,
+                  programming language concepts, and data structures
+                </li>
+                <li class="highlight">Dean's Honor List x3, 3.6 GPA</li>
+              </ul>
+            </li>
+
+            <li>
+              <h4>Complete Web Development Bootcamp</h4>
+              <ul>
+                <li>
+                  Developed foundational frontend skills using HTML, CSS, and
+                  responsive layout techniques
+                </li>
+                <li>
+                  Built multi-page websites focusing on layout, usability, and
+                  visual structure
+                </li>
+                <li>
+                  Worked with Flexbox, Grid, and Bootstrap to understand modern
+                  UI patterns
+                </li>
+                <li>
+                  Applied incremental learning by building projects from scratch
+                  rather than relying on templates
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h3>Employment History</h3>
+          <ul>
+            <li>
+              <h4>ServiceNow in Phoenix, AZ</h4>
+              <h5>
+                Extern | <span class="h5-reduced">Jun 2024 - Nov 2024</span>
+              </h5>
+              <ul>
+                <li>
+                  Completed a structured, project-based training program focused
+                  on ServiceNow platform development and enterprise workflow
+                  design
+                </li>
+                <li>
+                  Built simulated applications and backend logic using platform
+                  APIs, scripting, and data configuration to model real-world
+                  business processes
+                </li>
+                <li>
+                  Designed data tables, business rules, client scripts, and UI
+                  components within controlled development environments
+                </li>
+                <li>
+                  Practiced Agile-style development cycles, implementing
+                  incremental features and refining solutions based on
+                  instructor feedback
+                </li>
+                <li>
+                  Strengthened understanding of workflow automation, access
+                  control design, and enterprise platform architecture
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>United States Air Force in Tucson, AZ</h4>
+              <h5>
+                Program Management Officer (systems & Automation) |
+                <span class="h5-reduced">Oct 2023 - Nov 2024</span>
+              </h5>
+              <ul>
+                <li>
+                  Built SharePoint dashboards and JSON-based tools to improve
+                  program visibility and provide leadership with real-time
+                  insights
+                </li>
+                <li>
+                  Automated reporting workflows supporting 18 programs and over
+                  140 personnel, reducing manual tracking and improving accuracy
+                </li>
+                <li>
+                  Performed data validation, access reviews, and compliance
+                  checks to ensure adherence to CUI and DoD security
+                  requirements
+                </li>
+                <li>
+                  Translated operational needs into technical solutions,
+                  improving reporting clarity and decision-making efficiency
+                </li>
+              </ul>
+              <h5>
+                Section Manager (Internal TOols & Data Systems) |
+                <span class="h5-reduced">Nov 2020 - Oct 2023</span>
+              </h5>
+              <ul>
+                <li>
+                  Rebuilt a multi-user Access database using VBA and SQL,
+                  expanding functionality, improving data integrity, and
+                  supporting a growing user base
+                </li>
+                <li>
+                  Implemented role-based access controls aligned with enterprise
+                  security standards
+                </li>
+                <li>
+                  Identified workflow bottlenecks and redesigned processes to
+                  improve efficiency and reduce manual data handling
+                </li>
+                <li>
+                  Provided ongoing support and enhancements based on user
+                  feedback and evolving operational needs
+                </li>
+              </ul>
+              <h5>
+                Unit Deployment Manager (Operational Systems & Process
+                Automation) |
+                <span class="h5-reduced">Nov 2018 - Apr 2021</span>
+              </h5>
+              <ul>
+                <li>
+                  Led deployment preparation for 11 large-scale missions,
+                  coordinating personnel, equipment readiness, and compliance
+                  requirements across 9 units
+                </li>
+                <li>
+                  Identified operational risks and presented mitigation
+                  strategies to senior leadership to maintain mission readiness
+                </li>
+                <li>
+                  Conducted inspections and readiness reviews across multiple
+                  departments, contributing to a successful major inspection
+                  outcome
+                </li>
+                <li>
+                  Balanced operational priorities with process improvements to
+                  ensure both short-term readiness and long-term efficiency
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section id="Skills" class="skills">
+          <h1>In work</h1>
+        </section>
+        <section id="About" class="about">
+          <h2 class="center-self">
+            A little <span id="about-me-text">About Me</span>
+          </h2>
+          <p>
+            I'm an early-career software engineer seeking work while bolstering
+            my portfolio. I'm also a husband and stay-at-home dad to my 2 kids
+            and 3 fosters. I enjoy many types of board games and socializing
+            with friends.
+          </p>
+          <div class="about-grid">
+            <details name="alpha" style="--n: 1">
+              <summary class="tab prof-tab center-self">Professional</summary>
+              <div>
+                <div>
+                  <h3>Values & Ethics</h3>
+                  <p>
+                    Throughout my 21 years in the military, I developed a firm
+                    approach to teamwork and responsibility. I led teams,
+                    managed critical projects, and made decisions when direction
+                    wasn't clear. Just as importantly, I learned how to listen
+                    and grow. I value feedback, stay open to coaching, and
+                    support the mission from any position.
+                  </p>
+                  <p>
+                    I understand that trust isn't inherent, it's earned. I build
+                    it through consistency and thoughtful communication. Whether
+                    I'm leading an effort or contributing as part of the team, I
+                    maintain my focus: improve, add value, and help the group
+                    succeed.
+                  </p>
+                </div>
+                <h3>Software Engineer</h3>
+                <p>
+                  I began my journey into development near the tail-end of my
+                  military career when I overhauled an Access Database, greatly
+                  expanding it's features, capabilities, security, and user
+                  base. This truly sparked my interest so, while moving toward
+                  retirement, I pursued my B.S. in Computer Science, which I
+                  recently completed! I love coding and I have a wide interest
+                  in various fields, including, full-stack app and game
+                  development. At this point in time, I am further strengthening
+                  my development skills, completing bootcamps and working toward
+                  certificates.
+                </p>
+              </div>
+            </details>
+            <details name="alpha" style="--n: 2">
+              <summary class="tab pers-tab center-self">Personal</summary>
+              <article>
+                <h3>Game-Lover</h3>
+                <p>
+                  Cool stuff I've always been a fan of games--console, computer,
+                  backyard, board, card, sports.. you name it, I like to play
+                  it. Lately, I've been getting in to adventure/strategy-style
+                  board games, like: Carcassonne, Catan, Castle Panic, and
+                  Blokus. However, since I was about 12 years old, I've loved
+                  playing adventure and strategy computer games. I'll be the
+                  first to admit that I was on the WOW bandwagon for a long
+                  time, but I've also played StarCraft, Rift, Minecraft, and
+                  many more. I am really interested in creating my own games,
+                  but so far, I've only had enough time to create my
+                  partially-built strategy game, Cube Conquest (see it in my
+                  Portfolio).
+                </p>
+              </article>
+            </details>
           </div>
-        </div>
-        <img
-          src="./assets/images/profile-img.jpg"
-          class="my-pic center-self gradient-border"
-        />
-      </div>
+        </section>
+
+        <section id="Contact" class="contact"><h1>In work</h1></section>
+      </main>
     </div>
   </body>
 </html>
