@@ -15,39 +15,39 @@
     <!-- <link href="./css/grid.css" rel="stylesheet" />
     <link href="./css/style.css" rel="stylesheet" />
     <link href="./css/targeted.css" rel="stylesheet" />
-    <link href="./css/media.css" rel="stylesheet" />
+    <link href="./css/media.css" rel="stylesheet" />/./k/n
     <link href="./css/hero.css" rel="stylesheet" /> -->
   </head>
-  <body class="cursor">
+  <body>
     <div class="container">
       <div class="sidebar-bg" aria-hidden="true"></div>
       <nav class="main-menu">
         <a class="my-icon" href="index.html" aria-label="Home"
           ><span class="my-icon-text">R S</span></a
         >
-        <ul class="menu gradient-border center-self">
-          <li class="menu-item">
-            <a href="#Home" class="on-menu-hover">Home</a>
+        <ul class="menu">
+          <li>
+            <a href="#home" class="nav-link">Home</a>
           </li>
-          <li class="menu-item">
-            <a href="#Portfolio" class="on-menu-hover">Portfolio</a>
+          <li>
+            <a href="#portfolio" class="nav-link">Portfolio</a>
           </li>
-          <li class="menu-item">
-            <a href="#Resume" class="on-menu-hover">Resume</a>
+          <li>
+            <a href="#resume" class="nav-link">Resume</a>
           </li>
-          <li class="menu-item">
-            <a href="#Skills" class="on-menu-hover">Skills</a>
+          <li>
+            <a href="#skills" class="nav-link">Skills</a>
           </li>
-          <li class="menu-item">
-            <a href="#About" class="on-menu-hover">Who I Am</a>
+          <li>
+            <a href="#about" class="nav-link">Who I Am</a>
           </li>
-          <li class="menu-item">
-            <a href="#Contact" class="on-menu-hover last-a">Contact</a>
+          <li>
+            <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </nav>
       <main>
-        <section id="Home" class="hero">
+        <section id="home" class="hero">
           <h1 class="hero-name">Robert Stahl</h1>
           <h2 class="hero-subline">Software Engineer</h2>
           <ul class="hero-skills">
@@ -63,19 +63,25 @@
             class="my-pic center-self gradient-border"
           />
         </section>
-        <section id="Portfolio" class="portfolio">
+        <section id="portfolio" class="portfolio">
           <h2>Portfolio</h2>
           <p>
             Selected work focused on structure, systems, and usable solutions.
           </p>
 
-          <article class="smarttrip-article" aria-labelledby="smarttrip-heading">
+          <article
+            class="smarttrip-article"
+            aria-labelledby="smarttrip-heading"
+          >
             <div class="portfolio-left">
               <h3 id="smarttrip-heading">SmartTrip Planner</h3>
               <p>
-                My Computer Science Capstone of a website that allows users to
-                create trips with other users. Users can create a trip over a
-                time period
+                My Computer Science capstone was a web app that lets users
+                create trips and collaborate with other users. They can plan
+                travel across a date range, manage trip members, and organize
+                itinerary items such as: flights, lodging, car rentals, and
+                activities. Users can sign up with a standard email/password
+                account or authenticate through Google OAuth.
               </p>
               <ul>
                 <li>Designed relational schema using Prisma</li>
@@ -83,8 +89,9 @@
                 <li>Implemented authentication flow</li>
               </ul>
               <p>
-                <a href="...">View GitHub</a>
-                <a href="...">Live Demo</a>
+                <a href="https://github.com/robertstahldev/smarttrip-planner"
+                  >View GitHub</a
+                >
               </p>
             </div>
             <div class="portfolio-right">
@@ -106,20 +113,58 @@
             </div>
           </article>
 
-          <article aria-labelledby="cube-heading">
-            <h3 id="cube-heading">Cube Conquest</h3>
-            ...
+          <article class="cube-article" aria-labelledby="cube-heading">
+            <div class="portfolio-left">
+              <h3 id="cube-heading">Cube Conquest</h3>
+              <p>
+                Cube Conquest is a Unity-based 3D strategy game focused on
+                territory control, turn-based decision-making, and AI-driven
+                opponents. The project emphasizes an object-oriented design,
+                modular systems, and scalable gameplay logic. It was developed
+                as a personal engineering-focused game project to explore
+                interactive systems, maintainable Unity architecture, and
+                real-time game logic.
+              </p>
+              <ul>
+                <li>Procedural grid-based board generation</li>
+                <li>Adjacency and selection rules with hover feedback</li>
+                <li>Turn-based gameplay system with AI decision logic</li>
+              </ul>
+              <p>
+                <a href="https://github.com/robertstahldev/CubeConquest"
+                  >View GitHub</a
+                >
+              </p>
+            </div>
+            <div class="portfolio-right">
+              <img
+                id="cube-header"
+                src="./assets/images/menu-demo.gif"
+                alt="Gif of Cube Conquest menu demo"
+              />
+              <img
+                id="cube-flight"
+                src="./assets/images/cube-demo.gif"
+                alt="Gif of Cube Conquest cube animation demo"
+              />
+              <img
+                id="cube-lodge"
+                src="./assets/images/battle-demo.gif"
+                alt="Gif of Cube Conquest battle animation demo"
+              />
+            </div>
           </article>
         </section>
-        <section id="Resume" class="resume">
-          <h2>
+        <section id="resume" class="resume">
+          <h2>Resume</h2>
+          <h3>
             Software Engineer | Backend & Systems | Full-Stack Development
-          </h2>
+          </h3>
           <p class="resume-summary">
-            Software engineer with a background in systems automation, backend
-            development, and operational tools. Known for bringing structure to
-            complex environments, translating real-world problems into technical
-            solutions, and building reliable systems that support users.
+            Software engineer with a background in military program management
+            and full-stack development. Experienced in building collaborative
+            web applications and interactive 3D games using modern frameworks
+            and structured API design.
           </p>
 
           <p class="resume-note">
@@ -127,190 +172,16 @@
             see the <a href="skills.html">Skills page</a>.
           </p>
 
-          <h3>Career Highlights</h3>
-          <ul>
-            <li>
-              Designed and built data-driven applications, automation workflows,
-              and internal tools across multiple environments, supporting real
-              users and operational requirements.
-            </li>
-            <li>
-              Developed backend logic and APIs to support evolving business
-              needs, focusing on reliability, maintainability, and clear data
-              flow between systems.
-            </li>
-            <li>
-              Applied software engineering principles in high-accountability
-              environments where accuracy, security, and operational continuity
-              were critical.
-            </li>
-            <li>
-              Known for bringing structure to complex problems, communicating
-              clearly across technical and non-technical stakeholders, and
-              delivering solutions that improve efficiency.
-            </li>
-          </ul>
-          <h3>Education</h3>
-          <ul>
-            <li>
-              <h4>Bachelor of Science, Computer Science</h4>
-              <h5>
-                University of Maryland Global Campus, Phoenix, AZ |
-                <span class="h5-reduced">Dec 2025</span>
-              </h5>
-              <ul>
-                <li>
-                  Focused on software engineering practices, system design, and
-                  backend development
-                </li>
-                <li>
-                  Built full-stack and systems-level projects emphasizing clean
-                  architecture and maintainable code
-                </li>
-                <li>
-                  Advanced coursework included concurrent programming,
-                  programming language concepts, and data structures
-                </li>
-                <li class="highlight">Dean's Honor List x3, 3.6 GPA</li>
-              </ul>
-            </li>
-
-            <li>
-              <h4>Complete Web Development Bootcamp</h4>
-              <ul>
-                <li>
-                  Developed foundational frontend skills using HTML, CSS, and
-                  responsive layout techniques
-                </li>
-                <li>
-                  Built multi-page websites focusing on layout, usability, and
-                  visual structure
-                </li>
-                <li>
-                  Worked with Flexbox, Grid, and Bootstrap to understand modern
-                  UI patterns
-                </li>
-                <li>
-                  Applied incremental learning by building projects from scratch
-                  rather than relying on templates
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h3>Employment History</h3>
-          <ul>
-            <li>
-              <h4>ServiceNow in Phoenix, AZ</h4>
-              <h5>
-                Extern | <span class="h5-reduced">Jun 2024 - Nov 2024</span>
-              </h5>
-              <ul>
-                <li>
-                  Completed a structured, project-based training program focused
-                  on ServiceNow platform development and enterprise workflow
-                  design
-                </li>
-                <li>
-                  Built simulated applications and backend logic using platform
-                  APIs, scripting, and data configuration to model real-world
-                  business processes
-                </li>
-                <li>
-                  Designed data tables, business rules, client scripts, and UI
-                  components within controlled development environments
-                </li>
-                <li>
-                  Practiced Agile-style development cycles, implementing
-                  incremental features and refining solutions based on
-                  instructor feedback
-                </li>
-                <li>
-                  Strengthened understanding of workflow automation, access
-                  control design, and enterprise platform architecture
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h4>United States Air Force in Tucson, AZ</h4>
-              <h5>
-                Program Management Officer (systems & Automation) |
-                <span class="h5-reduced">Oct 2023 - Nov 2024</span>
-              </h5>
-              <ul>
-                <li>
-                  Built SharePoint dashboards and JSON-based tools to improve
-                  program visibility and provide leadership with real-time
-                  insights
-                </li>
-                <li>
-                  Automated reporting workflows supporting 18 programs and over
-                  140 personnel, reducing manual tracking and improving accuracy
-                </li>
-                <li>
-                  Performed data validation, access reviews, and compliance
-                  checks to ensure adherence to CUI and DoD security
-                  requirements
-                </li>
-                <li>
-                  Translated operational needs into technical solutions,
-                  improving reporting clarity and decision-making efficiency
-                </li>
-              </ul>
-              <h5>
-                Section Manager (Internal TOols & Data Systems) |
-                <span class="h5-reduced">Nov 2020 - Oct 2023</span>
-              </h5>
-              <ul>
-                <li>
-                  Rebuilt a multi-user Access database using VBA and SQL,
-                  expanding functionality, improving data integrity, and
-                  supporting a growing user base
-                </li>
-                <li>
-                  Implemented role-based access controls aligned with enterprise
-                  security standards
-                </li>
-                <li>
-                  Identified workflow bottlenecks and redesigned processes to
-                  improve efficiency and reduce manual data handling
-                </li>
-                <li>
-                  Provided ongoing support and enhancements based on user
-                  feedback and evolving operational needs
-                </li>
-              </ul>
-              <h5>
-                Unit Deployment Manager (Operational Systems & Process
-                Automation) |
-                <span class="h5-reduced">Nov 2018 - Apr 2021</span>
-              </h5>
-              <ul>
-                <li>
-                  Led deployment preparation for 11 large-scale missions,
-                  coordinating personnel, equipment readiness, and compliance
-                  requirements across 9 units
-                </li>
-                <li>
-                  Identified operational risks and presented mitigation
-                  strategies to senior leadership to maintain mission readiness
-                </li>
-                <li>
-                  Conducted inspections and readiness reviews across multiple
-                  departments, contributing to a successful major inspection
-                  outcome
-                </li>
-                <li>
-                  Balanced operational priorities with process improvements to
-                  ensure both short-term readiness and long-term efficiency
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <h3>
+            View and download my
+            <a href="./assets/documents/Robert_Stahl_Resume_2026.pdf">resume</a>
+            to read about my work experience.
+          </h3>
         </section>
-        <section id="Skills" class="skills">
+        <section id="skills" class="skills">
           <h1>In work</h1>
         </section>
-        <section id="About" class="about">
+        <section id="about" class="about">
           <h2 class="center-self">
             A little <span id="about-me-text">About Me</span>
           </h2>
@@ -380,7 +251,75 @@
           </div>
         </section>
 
-        <section id="Contact" class="contact"><h1>In work</h1></section>
+        <section id="contact" class="contact">
+          <h2 id="contact-heading">Contact</h2>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              id="access-key"
+              type="hidden"
+              name="access_key"
+              value="b26730a3-0463-4ff8-b407-a65f8eb24ff4"
+            />
+            <input
+              id="subject"
+              type="hidden"
+              name="subject"
+              value="Website Contact Form Submission"
+            />
+            <input type="hidden" name="form_name" value="RobMS_Site" />
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                id="first-name"
+                name="firstName"
+                class="form_control"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                id="last-name"
+                name="lastName"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="company">Company/Relation</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="form-control"
+                autocomplete="organization"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Submit</button>
+          </form>
+        </section>
       </main>
     </div>
   </body>
