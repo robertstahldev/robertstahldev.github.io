@@ -66,7 +66,7 @@ textarea {
 }
 
 body {
-  margin: 0;
+  margin-right: 3em;
   background-color: #f7f4ee;
 }
 
@@ -472,4 +472,12 @@ nav ul li:hover +li {
   border: none;
 }
 
+}
+
+@media (min-width: 1400px) {
+  .container > main {
+    grid-template-columns: 1fr 8fr;
+    max-width: 90%;
+  }
+  
 }
